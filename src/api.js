@@ -1,9 +1,9 @@
 const apiKey = "7bbd05d450414bd1a2d174449240903";
 
-export async function getWeather(city) {
+export async function getWeather(cityID) {
     console.log("Searching..");
     try{
-        const response = await fetch("https://api.weatherapi.com/v1/forecast.json?key=" + apiKey +  "&q=" + city);
+        const response = await fetch("https://api.weatherapi.com/v1/forecast.json?key=" + apiKey +  "&q=id:" + cityID);
         const data = await response.json();
         return data;
 
