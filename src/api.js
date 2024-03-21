@@ -17,6 +17,9 @@ export async function searchCity(city) {
     try{
         const response = await fetch("https://api.weatherapi.com/v1	/search.json?key=" + apiKey +  "&q=" + city);
         const data = await response.json();
+        if(data.length < 1){
+            alert("No city found");
+        }
         return data;
 
     } catch(error){
