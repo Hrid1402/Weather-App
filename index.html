@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+<script defer src="main.js"></script></head>
+
+<body>
+    <header>
+        <div class="Hcontent">
+            <div class="topPart">
+                <label for="cityInput">
+                    <input type="text" id="searchCity" placeholder="Search a city">
+                </label>
+    
+                <div id="changeButton">
+                    <p class="text">F°</p>
+                </div>
+
+            </div>
+            
+            
+            <ul id="cityButtons">
+            </ul>
+        </div>
+        
+    </header>
+    <div id="content">
+        <div class="weatherContent">
+            <div class="location">
+                <h1 class="date" id="dateTime">2024-03-21 1:31</h1>
+                <h1 class="region" id="region">Asia/Tokyo</h1>
+                <h1 class="city_country" id="city_contry">Tokyo, Japan</h1>
+            </div>
+            <div class="weather">
+                <div class="current">
+                    <h2 id="condition">Clear</h2>
+                    <img id="W_icon" src="//cdn.weatherapi.com/weather/64x64/night/113.png" alt="weatherICON">
+                    
+                </div>
+                
+                <h3 class="grade" id="grades">31.4°C</h3>
+                <div class="infText">
+                    <img src="imgs/humidity.d0397953be0135b86233.svg" alt="humidity" class="icon">
+                    <h2 id="humidity">Humidity: </h2>
+                </div>
+                
+                <div class="infText">
+                    <img src="imgs/wind.62b5fc3f01459d2cb15a.svg" alt="wind" class="icon">
+                    <h2 id="wind">Wind: </h2>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+</body>
+
+</html>
